@@ -1,0 +1,8 @@
+# Ignore all files
+*
+
+# Not ignore especified files
+!*.c
+!*.md
+!*.js
+!*.json
