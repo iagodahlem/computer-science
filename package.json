@@ -1,0 +1,17 @@
+{
+  "name": "computer-science",
+  "version": "1.0.0",
+  "description": "My course repo to backup and share useful things about an Computer Science course.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iagodahlem/computer-science.git"
+  },
+  "author": "Iago Dahlem Lorensini",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^1.2.1"
+  }
+}

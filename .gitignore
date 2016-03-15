@@ -2,6 +2,7 @@
 *
 
 # Not ignore especified files
+!.editorconfig
 !*.c
 !*.md
 !*.js
