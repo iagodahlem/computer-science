@@ -1,19 +1,23 @@
 'use strict';
 
-modules.exports = function(grunt) {
+var path = require('path');
+
+module.exports = (grunt) => {
 
 	grunt.initConfig({
 
 		config: {
+
 			c: {
-				all_files: '**/*.c',
+				all_files: 'algoritmos-e-programacao-2/**/*.c',
 			},
+
 		},
 
 		shell: {
 
 			compiler: {
-				command: 'gcc <%= inputFile %> -o <%= outputFile %> -lncurses',
+				command: 'gcc <%= inputFile %> -o <%= outputFile %> -lncurses && echo <%= inputFile %>',
 				options: {
 					stdout: true,
 					stderr: true,
@@ -23,22 +27,27 @@ modules.exports = function(grunt) {
 		},
 
 		watch: {
+
 			compiler: {
-				files: 'config.c.all_files',
+				files: '<%= config.c.all_files %>',
 				tasks: 'shell',
+				option: {
+					event: 'changed',
+				},
 			},
+
 		},
 
 	});
 
-	grunt.event.on('watch', function(filename) {
-		grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+	grunt.event.on('watch', (action, filepath, target) => {
+		var fileToCompile = path.parse(filepath);
+		grunt.config.set(inputFile, fileToCompile.base);
+		grunt.config.set(outputFile, fileToCompile.name);
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-shell');
+	require('load-grunt-tasks')(grunt);
 
-	grunt.registerTask('setup', []);
+	grunt.registerTask('compiler', ['watch']);
 
 };
