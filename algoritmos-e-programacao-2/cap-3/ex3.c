@@ -1,7 +1,3 @@
-// float %f
-// int %i
-// char %c || %s
-
 // Ler um vetor de 15 posições do tipo char, contar quantas vezes a letra "a" aparece no vetor
 
 #include <stdio.h>
