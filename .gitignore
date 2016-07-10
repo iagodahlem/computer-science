@@ -1,9 +1,0 @@
-# Ignore all files
-*
-
-# Not ignore especified files
-!.editorconfig
-!*.c
-!*.md
-!*.js
-!*.json
