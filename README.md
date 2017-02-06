@@ -1,6 +1,6 @@
 # computer-science
 
-> TODO: Write a project description
+My Computer Science course repository.
 
 ## License
 
