@@ -42,11 +42,11 @@ main() {
 				printf("Tecle ENTER para encerrar...");
 				getch();
 				break;
-			default: 
+			default:
 				clrscr();
 				gotoxy(5,5);
 				printf("Opcao invalida...");
-				getch();										 
+				getch();
 				break;
 		}
 
@@ -69,7 +69,7 @@ void cadastrar() {
 			gotoxy(5,14); printf("Nota...........:");
 
 			gotoxy(23,6); scanf("%i", &candidato.codigo);
-			gotoxy(23,8); scanf("%s", &candidato.nome);	
+			gotoxy(23,8); scanf("%s", &candidato.nome);
 			gotoxy(23,10); scanf("%i", &candidato.idade);
 			gotoxy(23,12); scanf("%s", &candidato.genero);
 			gotoxy(23,14); scanf("%f", &candidato.nota);
@@ -130,7 +130,7 @@ void editar() {
 						achei = 1;
 
 						gotoxy(22,15); scanf("%s", &candidato.nome);
-						gotoxy(22,16); scanf("%i", &candidato.idade);	
+						gotoxy(22,16); scanf("%i", &candidato.idade);
 						gotoxy(22,17); scanf("%s", &candidato.genero);
 						gotoxy(22,18); scanf("%f", &candidato.nota);
 
