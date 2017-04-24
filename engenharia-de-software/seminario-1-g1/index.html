@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Processos de Desenvolvimento - Engenharia de Software 2017/1</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="first" data-background="#000" style="text-align: left;">
+          <h1>Processos de <span class="highlight">Desenvolvimento</span></h1>
+          <p class="small">Por Daiane, Iago, Jean e Leonardo</p>
+        </section>
+
+        <section>
+          <h2>Tipos de Processos de Desenvolvimento</h2>
+          <img src="img/tipos-de-processos-de-desenvolvimento.png">
+        </section>
+
+        <section>
+          <h2>Processos Tradicionais</h2>
+        </section>
+
+        <section data-background="img/waterfall.jpg">
+          <h3 style="color: #fff; text-shadow: 0 0 13px rgba(0,0,0,.2);">Waterfall</h3>
+        </section>
+        <section>
+          <img src="img/waterfall-model.jpg">
+        </section>
+
+        <section>
+          <h2>Processos Ágeis</h2>
+        </section>
+
+        <section>
+          <h3>Scrum</h3>
+        </section>
+
+        <section>
+          <h2>Novidades / Avanços</h2>
+        </section>
+
+        <section data-background="img/squads.jpg">
+          <h3 style="color: #fff; text-shadow: 0 0 13px rgba(0,0,0,.2);">Squads</h3>
+        </section>
+        <section>
+          <p>
+            "Small, cross functional, self-organizing team."
+          </p>
+          <p class="small">
+            - Henrik Kniberg, Spotify
+          </p>
+        </section>
+
+        <section data-background="img/design-sprint.jpg">
+
+        </section>
+        <section>
+          <h3>UX</h3>
+          <img src="img/design-sprint-ux.jpg">
+        </section>
+        <section>
+          <h3>Processo</h3>
+          <img src="img/design-sprint-processo.png">
+        </section>
+        <section>
+          <h3>Semana</h3>
+          <img src="img/design-sprint-semana.png">
+        </section>
+
+        <section>
+          <h3>Safe</h3>
+        </section>
+
+        <section>
+          <h3>Customer Development</h3>
+        </section>
+
+        <section data-background="https://media.giphy.com/media/yoJC2El7xJkYCadlWE/giphy.gif">
+          <h3 style="color: #fff;">Obrigado!</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
